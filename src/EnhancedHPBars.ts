@@ -293,15 +293,6 @@ class EnhancedHPBars extends Plugin {
         this.targetContainer?.remove();
     }
 
-    SocketManager_loggedIn(..._args: any) {
-        if (!this.settings.enable.value) {
-            return;
-        }
-
-        // Use the same createTargetContainer method for consistency
-        this.createTargetContainer();
-    }
-
     GameLoop_draw() {
         if (!this.settings.enable.value) {
             return;
